@@ -1,0 +1,1 @@
+[{"status":false,"id":"gtMduU60FYqCy7sSAACf","host":"dienpham","members":[{"status":true,"id":"gtMduU60FYqCy7sSAACf","username":"dienpham","score":0,"turn":true,"connect":true,"x":700,"y":500,"text":"create a room"}]}]

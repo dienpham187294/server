@@ -1,0 +1,218 @@
+[
+    {
+        "id": "123456789",
+        "name": "Cinderella (Feel Good Fairy Tales)",
+        "description": "Ella is invited to a fancy dress ball - but she has no pretty dress! Luckily a fairy dogmother is nearby...",
+        "img": "https://i.postimg.cc/6QS6V6Rc/hinh-2.png",
+        "content": [
+            {
+                "text": "",
+                "img": "https://i.postimg.cc/6QS6V6Rc/hinh-2.png"
+            },
+            {
+                "text": "Once upon a time there lived a poor girl Ella, whose parents seemed very unkind to her.",
+                "img": "https://i.postimg.cc/BQsSBV8r/hinh-3.png"
+            },
+            {
+                "text": "They made her do chores around the house, like helping to wash the dishes, hang and fold the clothes, and playing with her baby brother. ",
+                "img": "https://i.postimg.cc/8cd1VhYX/hinh-4.png"
+            },
+            {
+                "text": "Even though she had two older sisters who also had to help, it seemed like the work would never end.",
+                "img": "https://i.postimg.cc/8cd1VhYX/hinh-4.png"
+            },
+            {
+                "text": "When Ella would complain about the work she had to do, her parents did not understand at all.",
+                "img": "https://i.postimg.cc/8cd1VhYX/hinh-4.png"
+            },
+            {
+                "text": "We live in a house together! they would tell her. ",
+                "img": "https://i.postimg.cc/8cd1VhYX/hinh-4.png"
+            },
+            {
+                "text": "Everyone has to do their little bit to help. ",
+                "img": "https://i.postimg.cc/8cd1VhYX/hinh-4.png"
+            },
+            {
+                "text": "If you don't help, it will take us so long to clean up after everyone that we'll have no time left over to read to you, or play with you, or do nice things together.",
+                "img": "https://i.postimg.cc/8cd1VhYX/hinh-4.png"
+            },
+            {
+                "text": "So Ella was stuck with doing some chores every day, even though she was only six.",
+                "img": "https://i.postimg.cc/KzMG0XD2/hinh-5.png"
+            },
+            {
+                "text": "Worse, her baby brother would come along and make mess of everything, right after she had cleaned up!",
+                "img": "https://i.postimg.cc/KzMG0XD2/hinh-5.png"
+            },
+            {
+                "text": "One day, Ella received an invitation in the mail.",
+                "img": "https://i.postimg.cc/FsgRt45F/hinh-6.png"
+            },
+            {
+                "text": "It was for a dress-up party at her friend Tom's house.",
+                "img": "https://i.postimg.cc/FsgRt45F/hinh-6.png"
+            },
+            {
+                "text": "Tom wanted everyone at his party to dress up like princes and princesses.",
+                "img": "https://i.postimg.cc/FsgRt45F/hinh-6.png"
+            },
+            {
+                "text": "Ella was very excited.",
+                "img": "https://i.postimg.cc/FsgRt45F/hinh-6.png"
+            },
+            {
+                "text": "But when she went to her toy box to find her dress-up princess dress, she saw that she had grown out of it.",
+                "img": "https://i.postimg.cc/7PSP7kL1/hinh-7.png"
+            },
+            {
+                "text": "A long, long time ago.",
+                "img": "https://i.postimg.cc/7PSP7kL1/hinh-7.png"
+            },
+            {
+                "text": "Ella needed a new dress. ",
+                "img": "https://i.postimg.cc/x8V07s6b/hinh-8.png"
+            },
+            {
+                "text": "But Mummy and Daddy didn't have any money for a new dress. ",
+                "img": "https://i.postimg.cc/x8V07s6b/hinh-8.png"
+            },
+            {
+                "text": "Not the kind that Ella would like, with pearl buttons and sparkles on the train.",
+                "img": "https://i.postimg.cc/x8V07s6b/hinh-8.png"
+            },
+            {
+                "text": "Ella looked in her Mummy's wardrobe, but there was nothing in there that she thought would make her look like a princess.",
+                "img": "https://i.postimg.cc/g2z0mTmV/hinh-9.png"
+            },
+            {
+                "text": "Then she looked in Daddy's wardrobe, thinking she might dress up as a prince. But there was nothing in his wardrobe either.",
+                "img": "https://i.postimg.cc/g2z0mTmV/hinh-9.png"
+            },
+            {
+                "text": "Ella looked in her big sister's wardrobe.",
+                "img": "https://i.postimg.cc/hPrSy1Tf/hinh-10.png"
+            },
+            {
+                "text": "Get out! they cried when they saw her. ",
+                "img": "https://i.postimg.cc/hPrSy1Tf/hinh-10.png"
+            },
+            {
+                "text": "You'll make a mess!",
+                "img": "https://i.postimg.cc/hPrSy1Tf/hinh-10.png"
+            },
+            {
+                "text": "Ella thought that if she did not have a dress-up costume to wear to the party, she could not go to the party at all.",
+                "img": "https://i.postimg.cc/t449LnND/hinh-11.png"
+            },
+            {
+                "text": "She ran to the garden and climbed into her favourite tree. ",
+                "img": "https://i.postimg.cc/t449LnND/hinh-11.png"
+            },
+            {
+                "text": "Then she cried a little bit.",
+                "img": "https://i.postimg.cc/t449LnND/hinh-11.png"
+            },
+            {
+                "text": "Right at that moment, something special happened.",
+                "img": "https://i.postimg.cc/D0hT5Szr/hinh-12.png"
+            },
+            {
+                "text": "The dog who lived in the house behind popped his head up over the fence. ",
+                "img": "https://i.postimg.cc/D0hT5Szr/hinh-12.png"
+            },
+            {
+                "text": "He was standing on his hind legs, and smiling, because he was a fairy prince, although Ella didn't know it yet.",
+                "img": "https://i.postimg.cc/D0hT5Szr/hinh-12.png"
+            },
+            {
+                "text": "Why are you crying? he asked Ella.",
+                "img": "https://i.postimg.cc/rmxTS1qy/hinh-13.png"
+            },
+            {
+                "text": "I'm crying because I don't have a fancy dress costume to wear to Tom's party, Ella sniffed sadly. ",
+                "img": "https://i.postimg.cc/rmxTS1qy/hinh-13.png"
+            },
+            {
+                "text": "I need to dress up like a princess and there's nothing here that looks like a princess dress.",
+                "img": "https://i.postimg.cc/rmxTS1qy/hinh-13.png"
+            },
+            {
+                "text": "Oh that's nothing to worry about, said the dog (who was actually a Fairy Dogmother). ",
+                "img": "https://i.postimg.cc/LsrRYCK0/hinh-14.png"
+            },
+            {
+                "text": "We can fix that, quick as you like! ",
+                "img": "https://i.postimg.cc/LsrRYCK0/hinh-14.png"
+            },
+            {
+                "text": "Find me an old ball, some gloves, a scarf, a newspaper and some crayons. ",
+                "img": "https://i.postimg.cc/LsrRYCK0/hinh-14.png"
+            },
+            {
+                "text": "I'll sort out the rest with a magic spell.",
+                "img": "https://i.postimg.cc/LsrRYCK0/hinh-14.png"
+            },
+            {
+                "text": "",
+                "img": "https://i.postimg.cc/g0wm095Z/hinh-15.png"
+            },
+            {
+                "text": "So Ella went inside and found those things.",
+                "img": "https://i.postimg.cc/6qhNPB7D/hinh-16.png"
+            },
+            {
+                "text": "When she came back out, the dog jumped over the fence and did his magic.",
+                "img": "https://i.postimg.cc/6qhNPB7D/hinh-16.png"
+            },
+            {
+                "text": "Ella looked beautiful!",
+                "img": "https://i.postimg.cc/CLF0qnXY/hinh-17.png"
+            },
+            {
+                "text": "What did you ask for the ball?",
+                "img": "https://i.postimg.cc/wx5HMQW0/hinh-18.png"
+            },
+            {
+                "text": "Just to play with it!",
+                "img": "https://i.postimg.cc/wx5HMQW0/hinh-18.png"
+            },
+            {
+                "text": "She went to the party and danced all day.",
+                "img": "https://i.postimg.cc/YqbHfqBF/hinh-19.png"
+            },
+            {
+                "text": "Nobody would have recognised her, if it wasn't for the enormous smile that she wore on her face.",
+                "img": "https://i.postimg.cc/YqbHfqBF/hinh-19.png"
+            },
+            {
+                "text": "It was one of the best days of her life.",
+                "img": "https://i.postimg.cc/YqbHfqBF/hinh-19.png"
+            },
+            {
+                "text": "",
+                "img": "https://i.postimg.cc/1thh58wk/hinh-20.png"
+            },
+            {
+                "text": "Later, when she came home, the newspaper, scarf and gloves became ordinary again.",
+                "img": "https://i.postimg.cc/Kjx6BC9Q/hinh-21.png"
+            },
+            {
+                "text": "She put them neatly away.",
+                "img": "https://i.postimg.cc/Kjx6BC9Q/hinh-21.png"
+            },
+            {
+                "text": "Having a dress from the shop would have been nice.",
+                "img": "https://i.postimg.cc/0yjqtR9B/hinh-22.png"
+            },
+            {
+                "text": "But having a dress with a bit of magic in it was ten times better, and made her a princess for real!",
+                "img": "https://i.postimg.cc/0yjqtR9B/hinh-22.png"
+            },
+            {
+                "text": "",
+                "img": "https://i.postimg.cc/Ss60XmGJ/hinh-23.png"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1 @@
+[{"status":false,"id":"MoKXxT21sqn_MtI6AACd","host":"dienpham","members":[{"status":true,"id":"MoKXxT21sqn_MtI6AACd","username":"dienpham","score":0,"turn":true,"connect":true,"x":409.5,"y":145,"text":"..."}]}]

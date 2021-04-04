@@ -1,0 +1,1 @@
+[{"username":"dienpham","password":"187294","position":"admin"},{"username":"username01","password":"123456","position":"student"},{"username":"username02","password":"123456","position":"student"}]
