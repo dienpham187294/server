@@ -1,1 +1,0 @@
-[{"status":false,"id":"6uD7GKTJkglB5M_SAAAc","host":"username01","members":[{"status":true,"id":"6uD7GKTJkglB5M_SAAAc","username":"username01","score":0,"level":0}]}]

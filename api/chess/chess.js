@@ -197,59 +197,7 @@ function updateDisconnect(arr, socketio) {
 }
 
 
-function rolldice(fs, io, data) {
-    let arrToEmit = [];
-    let arrPlayerActive = [];
-    let usenameNextTurn;
-    fs.readFile(`./database/start/${data[1]}.txt`, 'utf8', (err, jsonFile) => {
-        if (err) {
-            console.error(err)
-            return
-        }
-        let arr = JSON.parse(jsonFile);
 
-        arr.forEach(e => {
-            e.members.forEach(ee => {
-                if (ee.status && ee.connect) {
-                    arrToEmit.push(ee.id);
-                    arrPlayerActive.push(ee)
-                }
-                if (ee.username === data[2]) {
-                    ee.position += data[3];
-                }
-            })
-        })
-
-        for (let i = 0; i < arrPlayerActive.length; i++) {
-            if (arrPlayerActive[i].turn) {
-                let num = (i + 1) % arrPlayerActive.length;
-                usenameNextTurn = arrPlayerActive[num].username;
-            }
-        };
-        arr.forEach(e => {
-            e.members.forEach(ee => {
-                if (ee.status && ee.connect) {
-                    ee.turn = false;
-                    if (ee.username === usenameNextTurn) {
-                        ee.turn = true;
-                    }
-                }
-
-            })
-        })
-
-        console.log("usertnamenextrunr", usenameNextTurn);
-        fs.writeFile(`./database/start/${data[1]}.txt`, JSON.stringify(arr), (err) => {
-            if (err) throw err;
-            console.log('Data written to file : rolldice: ');
-        });
-        arrToEmit.forEach(e => {
-            io.to(e).emit("updateGamePlay", arr)
-        })
-
-    })
-
-}
 function monopolyPlayGame(fs, io, data) {
     console.log("monopolyPlayGame", data);
     fs.readFile(`./database/start/${data[1]}.txt`, 'utf8', (err, jsonFile) => {
@@ -322,6 +270,31 @@ function LearnNow(io, data) {
         io.to(e).emit("LearnNow", data[3])
     })
 }
+
+function ChangeSocketID(fs, io, data) {
+    console.log(data);
+    fs.readFile(`./database/start/${data[1]}.txt`, 'utf8', (err, jsonFile) => {
+        if (err) {
+            return
+        }
+        let arr = (JSON.parse(jsonFile));
+        arr[0].members.forEach(e => {
+            if (e.username === data[2]) {
+                e.id = data[3];
+                e.status = true;
+            }
+        })
+
+        fs.writeFile(`./database/start/${data[1]}.txt`, JSON.stringify(arr), (err) => {
+            if (err) throw err;
+            console.log('Data written to file Move');
+        });
+
+        io.to(data[3]).emit("StartPlay", arr)
+
+
+    })
+}
 function allListen(fs, io, data) {
     if (data[0] === "get_info") {
         getInfo(fs, io);
@@ -337,9 +310,6 @@ function allListen(fs, io, data) {
     //Monopoly 4-----------------------------------
     else if (data[0] === "start") {
         start(fs, io, data);
-    } else if (data[0] === "rolldice") {
-        console.log("roll dice", data[3])
-        rolldice(fs, io, data);
     } else if (data[0] === "monopolyPlayGame") {
         monopolyPlayGame(fs, io, data);
     } else if (data[0] === "UpLevel") {
@@ -351,6 +321,9 @@ function allListen(fs, io, data) {
     } else if (data[0] === "LearnNow") {
         // monopolyPlayGame(fs, io, data);
         LearnNow(io, data);
+    } else if (data[0] === "ChangeSocketID") {
+        // monopolyPlayGame(fs, io, data);
+        ChangeSocketID(fs, io, data);
     }
 
 }

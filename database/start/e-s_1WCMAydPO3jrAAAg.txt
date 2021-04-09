@@ -1,1 +1,0 @@
-[{"status":false,"id":"e-s_1WCMAydPO3jrAAAg","host":"dienpham","members":[{"status":true,"id":"e-s_1WCMAydPO3jrAAAg","username":"dienpham","score":2,"turn":true,"connect":true,"x":396.5,"y":164,"text":"take care"}]}]

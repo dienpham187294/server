@@ -1,1 +1,0 @@
-[{"status":false,"id":"pde2uCKC1fgxy-S_AABc","host":"dienpham","members":[{"status":true,"id":"pde2uCKC1fgxy-S_AABc","username":"dienpham","money":0,"turn":true,"connect":true,"x":700,"y":500}]}]

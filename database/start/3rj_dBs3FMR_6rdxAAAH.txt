@@ -1,1 +1,0 @@
-[{"status":false,"id":"3rj_dBs3FMR_6rdxAAAH","host":"dienpham","members":[{"status":true,"id":"3rj_dBs3FMR_6rdxAAAH","username":"dienpham","score":1,"turn":true,"connect":true,"x":384.5,"y":120,"text":"Enya"}]}]

@@ -1,1 +1,0 @@
-[{"status":false,"id":"7TuyJSA-NwylHzLmAACa","host":"dienpham","members":[{"status":true,"id":"7TuyJSA-NwylHzLmAACa","username":"dienpham","score":0,"level":1}]}]

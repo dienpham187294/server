@@ -1,1 +1,0 @@
-[{"status":false,"id":"PZbr46w3iuuF-GgPAADr","host":"dienpham","members":[{"status":true,"id":"PZbr46w3iuuF-GgPAADr","username":"dienpham","money":0,"turn":true,"connect":true,"x":700,"y":500}]}]

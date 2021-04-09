@@ -1,1 +1,0 @@
-[{"status":false,"id":"bcYU_Kd5CBalnBSFAADO","host":"dienpham","members":[{"status":true,"id":"bcYU_Kd5CBalnBSFAADO","username":"dienpham","money":0,"turn":true,"connect":true,"x":700,"y":500}]}]

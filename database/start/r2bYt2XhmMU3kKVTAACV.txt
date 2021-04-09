@@ -1,1 +1,0 @@
-[{"status":false,"id":"r2bYt2XhmMU3kKVTAACV","host":"dienpham","members":[{"status":true,"id":"r2bYt2XhmMU3kKVTAACV","username":"dienpham","money":0,"turn":true,"connect":true,"x":700,"y":500}]}]
