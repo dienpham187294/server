@@ -25,14 +25,14 @@ function dangkytaikhoan(fs, io, data) {
         }
         let arrOfUser = JSON.parse(jsonFile);
         arrOfUser.push({
-            "username": data[2],
-            "password": data[5],
-            "name": data[3],
+            "username": data[1],
+            "password": data[4],
+            "name": data[2],
             "position": "student",
-            "ipaddress": data[6],
-            "email": data[4],
-            "time": Date.now() + 5 * 24 * 60 * 60,
-            "status": "trial5ngay"
+            "ipaddress": data[5],
+            "email": data[3],
+            "time": Date.now() + 5 * 24 * 60 * 60 * 1000,
+            "status": "Trial5ngay"
         })
         fs.writeFile('./database/user.txt', JSON.stringify(arrOfUser), (err) => {
             if (err) throw err;

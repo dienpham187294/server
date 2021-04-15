@@ -21,14 +21,16 @@ io.on('connection', client => {
     client.on("chess", (data) => {
         fnChess.allListen(fs, io, data);
     })
-    
+
     client.on("saveFile", (data) => {
         fnSaveFile.allListen(fs, io, data);
     })
     client.on("Login", (data) => {
         fnLogin.allListen(fs, io, data);
     })
-
+    client.on("JustOneAccount", (data) => {
+        io.emit(data[0], data[1])
+    })
     //All -----------------------------------
     //Update Disconnect
     client.on('disconnect', () => {
