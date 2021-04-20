@@ -2,7 +2,7 @@
 function getInfo(fs, io, data) {
     fs.readFile(`./database/record/${data[1]}.txt`, 'utf8', (err, jsonFile) => {
         if (err) {
-            console.error(err)
+            // console.error(err)
             return
         }
         io.to(data[2]).emit("get_info_One", jsonFile)
@@ -34,9 +34,11 @@ function dangkytaikhoan(fs, io, data) {
             "time": Date.now() + 5 * 24 * 60 * 60 * 1000,
             "status": "Trial5ngay"
         })
-        fs.writeFile('./database/user.txt', JSON.stringify(arrOfUser), (err) => {
-            if (err) throw err;
-        });
+        if (JSON.stringify(arrOfUser).length > 10) {
+            fs.writeFile('./database/user.txt', JSON.stringify(arrOfUser), (err) => {
+                if (err) throw err;
+            });
+        }
     })
 }
 function allListen(fs, io, data) {
@@ -52,3 +54,13 @@ function allListen(fs, io, data) {
 
 }
 module.exports = { allListen }
+
+
+function IsJsonString(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}

@@ -13,11 +13,16 @@ function create(fs, io, data) {
         if (err) {
             return
         }
+
         let arr = updateCreateMonopoly(JSON.parse(jsonFile), data[1], data[2]);
-        fs.writeFile('./database/chessroom.txt', JSON.stringify(arr), (err) => {
-            if (err) throw err;
-        });
-        io.emit("updateRoom", arr)
+        if (JSON.stringify(arr).length > 10) {
+            fs.writeFile('./database/chessroom.txt', JSON.stringify(arr), (err) => {
+                if (err) throw err;
+            });
+            io.emit("updateRoom", arr)
+        }
+
+
     })
 }
 
@@ -51,10 +56,12 @@ function jion(fs, io, data) {
             return
         }
         let arr = updateJionRoom(JSON.parse(jsonFile), data[1], data[2], data[3]);
-        fs.writeFile('./database/chessroom.txt', JSON.stringify(arr), (err) => {
-            if (err) throw err;
-        });
-        io.emit("updateRoom", arr)
+        if (JSON.stringify(arr).length > 10) {
+            fs.writeFile('./database/chessroom.txt', JSON.stringify(arr), (err) => {
+                if (err) throw err;
+            });
+            io.emit("updateRoom", arr)
+        }
     })
 }
 
@@ -108,14 +115,16 @@ function start(fs, io, data) {
             return
         }
         let arr = updateStart(JSON.parse(jsonFile), data[1], data[2], data[3]);
-        fs.writeFile('./database/chessroom.txt', JSON.stringify(arr[0]), (err) => {
-            if (err) throw err;
-            console.log('Data written to file ========================');
-        });
-        io.emit("updateRoom", arr[0])
+
+        if (JSON.stringify(arr[0]).length > 10) {
+            fs.writeFile('./database/chessroom.txt', JSON.stringify(arr[0]), (err) => {
+                if (err) throw err;
+            });
+            io.emit("updateRoom", arr[0])
+        }
+
         fs.writeFile(`./database/start/${data[1]}.txt`, JSON.stringify(arr[1]), (err) => {
             if (err) throw err;
-            console.log('Data written to file');
         });
         arr[2].forEach(e => {
             io.to(e).emit("StartPlay", arr[1])
@@ -166,16 +175,16 @@ function updateStart(arr, socketid, username, host) {
 function disConnect(fs, io, socketid) {
     fs.readFile('./database/chessroom.txt', 'utf8', (err, jsonFile) => {
         if (err) {
-            console.error(err)
             return
         }
         let arr = updateDisconnect(JSON.parse(jsonFile), socketid);
-        fs.writeFile('./database/chessroom.txt', JSON.stringify(arr), (err) => {
-            if (err) throw err;
-            console.log('Data written to file : Disconnect: ');
-        });
+        if (JSON.stringify(arr).length > 10) {
+            fs.writeFile('./database/chessroom.txt', JSON.stringify(arr), (err) => {
+                if (err) throw err;
+            });
+            io.emit("updateRoom", arr)
+        }
 
-        io.emit("updateRoom", arr)
     })
 }
 function updateDisconnect(arr, socketio) {
@@ -199,7 +208,7 @@ function updateDisconnect(arr, socketio) {
 
 
 function monopolyPlayGame(fs, io, data) {
-    console.log("monopolyPlayGame", data);
+
     fs.readFile(`./database/start/${data[1]}.txt`, 'utf8', (err, jsonFile) => {
         if (err) {
             return
@@ -213,7 +222,7 @@ function monopolyPlayGame(fs, io, data) {
         })
         fs.writeFile(`./database/start/${data[1]}.txt`, JSON.stringify(arr), (err) => {
             if (err) throw err;
-            console.log('Data written to file Move');
+
         });
         data[4].forEach(e => {
             io.to(e).emit("updateGamePlay", arr)
@@ -235,7 +244,7 @@ function UpLevel(fs, io, data) {
         })
         fs.writeFile(`./database/start/${data[1]}.txt`, JSON.stringify(arr), (err) => {
             if (err) throw err;
-            console.log('Data written to file Move');
+
         });
         data[3].forEach(e => {
             io.to(e).emit("updateGamePlay", arr)
@@ -254,9 +263,10 @@ function UpScore(fs, io, data) {
                 e.score += 1;
             }
         })
+
         fs.writeFile(`./database/start/${data[1]}.txt`, JSON.stringify(arr), (err) => {
             if (err) throw err;
-            console.log('Data written to file Move');
+
         });
         data[3].forEach(e => {
             io.to(e).emit("updateGamePlay", arr)
@@ -272,7 +282,7 @@ function LearnNow(io, data) {
 }
 
 function ChangeSocketID(fs, io, data) {
-    console.log(data);
+
     fs.readFile(`./database/start/${data[1]}.txt`, 'utf8', (err, jsonFile) => {
         if (err) {
             return
@@ -287,7 +297,6 @@ function ChangeSocketID(fs, io, data) {
 
         fs.writeFile(`./database/start/${data[1]}.txt`, JSON.stringify(arr), (err) => {
             if (err) throw err;
-            console.log('Data written to file Move');
         });
 
         io.to(data[3]).emit("StartPlay", arr)
@@ -331,3 +340,12 @@ module.exports = { allListen, disConnect }
 
 
 
+
+function IsJsonString(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
