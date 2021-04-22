@@ -1,0 +1,20 @@
+[
+    {
+        "name": "ClassF01",
+        "time": "Thứ 2: 9h-10h30 - Thứ 4: 9h-10h30",
+        "status": "Đang nhận đăng ký",
+        "members": []
+    },
+    {
+        "name": "ClassF02",
+        "time": "Thứ 3: 9h-10h30 - Thứ 5: 9h-10h30",
+        "status": "Đang nhận đăng ký",
+        "members": []
+    },
+    {
+        "name": "ClassF03",
+        "time": "Thứ 4: 9h-10h30 - Thứ 6: 9h-10h30",
+        "status": "Đang nhận đăng ký",
+        "members": []
+    }
+]
