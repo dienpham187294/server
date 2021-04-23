@@ -1,3 +1,59 @@
+const nodemailer = require("nodemailer");
+
+
+function codangkytaikhoanmoi() {
+
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'dienpham187294@gmail.com',
+            pass: 'rqccbitaohabcrzv'
+        }
+    });
+
+    var mailOptions = {
+        from: 'dienpham187294@gmail.com',
+        to: 'dienpham187294@gmail.com',
+        subject: 'Có người đăng ký tài khoản mới',
+        text: 'That was easy!'
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+        }
+    });
+
+}
+function codangkykhoahocmienphi() {
+
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'dienpham187294@gmail.com',
+            pass: 'rqccbitaohabcrzv'
+        }
+    });
+
+    var mailOptions = {
+        from: 'dienpham187294@gmail.com',
+        to: 'dienpham187294@gmail.com',
+        subject: 'Có người đăng ký khóa học miễn phí',
+        text: 'Có người đăng ký!'
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+        }
+    });
+
+}
+
 function adminGetInfo(fs, io, data) {
     fs.readFile('./database/user.txt', 'utf8', (err, jsonFile) => {
         if (err) {
@@ -55,6 +111,12 @@ function allListen(fs, io, data) {
     }
     if (data[0] === "doitrangthai") {
         doitrangthai(fs, io, data)
+    }
+    if (data[0] === "codangkytaikhoanmoi") {
+        codangkytaikhoanmoi()
+    }
+    if (data[0] === "codangkykhoahocmienphi") {
+        codangkykhoahocmienphi()
     }
 }
 
