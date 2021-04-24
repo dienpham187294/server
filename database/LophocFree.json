@@ -1,19 +1,37 @@
 [
     {
-        "name": "ClassF01",
-        "time": "Thứ 2: 9h-10h30 - Thứ 4: 9h-10h30",
+        "name": "ClassF001",
+        "time": "Buổi sáng các ngày trong tuần.",
         "status": "Đang nhận đăng ký",
         "members": []
     },
     {
-        "name": "ClassF02",
-        "time": "Thứ 3: 9h-10h30 - Thứ 5: 9h-10h30",
+        "name": "ClassF002",
+        "time": "Buổi chiều các ngày trong tuần.",
         "status": "Đang nhận đăng ký",
         "members": []
     },
     {
-        "name": "ClassF03",
-        "time": "Thứ 4: 9h-10h30 - Thứ 6: 9h-10h30",
+        "name": "ClassF003",
+        "time": "Buổi tối các ngày trong tuần.",
+        "status": "Đang nhận đăng ký",
+        "members": []
+    },
+    {
+        "name": "ClassF004",
+        "time": "Buổi sáng các ngày cuối tuần",
+        "status": "Đang nhận đăng ký",
+        "members": []
+    },
+    {
+        "name": "ClassF005",
+        "time": "Buổi chiều các ngày cuối tuần",
+        "status": "Đang nhận đăng ký",
+        "members": []
+    },
+    {
+        "name": "ClassF006",
+        "time": "Buổi tối các ngày cuối tuần",
         "status": "Đang nhận đăng ký",
         "members": []
     }

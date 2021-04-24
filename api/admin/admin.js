@@ -2,7 +2,13 @@ const nodemailer = require("nodemailer");
 
 
 function codangkytaikhoanmoi() {
-
+    let Temp = "";
+    fs.readFile('./database/user.txt', 'utf8', (err, jsonFile) => {
+        if (err) {
+            return
+        }
+        Temp = jsonFile;
+    })
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -15,7 +21,7 @@ function codangkytaikhoanmoi() {
         from: 'dienpham187294@gmail.com',
         to: 'dienpham187294@gmail.com',
         subject: 'Có người đăng ký tài khoản mới',
-        text: 'That was easy!'
+        text: Temp
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
@@ -28,7 +34,13 @@ function codangkytaikhoanmoi() {
 
 }
 function codangkykhoahocmienphi() {
-
+    let Temp = "";
+    fs.readFile('./database/user.txt', 'utf8', (err, jsonFile) => {
+        if (err) {
+            return
+        }
+        Temp = jsonFile;
+    })
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -41,7 +53,7 @@ function codangkykhoahocmienphi() {
         from: 'dienpham187294@gmail.com',
         to: 'dienpham187294@gmail.com',
         subject: 'Có người đăng ký khóa học miễn phí',
-        text: 'Có người đăng ký!'
+        text: Temp
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
